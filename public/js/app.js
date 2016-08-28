@@ -1,5 +1,9 @@
 var socket = io();
 
 socket.on('connection', function () {
-	console.log('Connected to socket');	
+	
+});
+
+socket.on('message', function (message) {
+	console.log('message received: ' +message.text );
 });
